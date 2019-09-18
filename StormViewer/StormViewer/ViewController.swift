@@ -14,6 +14,7 @@ class ViewController: UITableViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareInfo))
         title = "Storm Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
 
@@ -29,6 +30,12 @@ class ViewController: UITableViewController {
             pictures.sort()
         }
         print(pictures)
+    }
+    @objc func shareInfo(){
+        let vc = UIActivityViewController(activityItems: ["Make sure you get this app!"], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        present(vc, animated: true)
+        
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
@@ -49,5 +56,7 @@ class ViewController: UITableViewController {
             navigationController?.pushViewController(vc,animated: true)
         }
     }
+    
+    
 }
 

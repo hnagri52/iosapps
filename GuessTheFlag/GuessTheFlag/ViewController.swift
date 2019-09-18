@@ -23,6 +23,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Score", style: .plain, target: self, action: #selector(showScore))
+//        navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .play, target: self, action: #selector(showScore))
+        
+
+        
+        
         countries += ["estonia", "france", "germany", "ireland", "italy", "monaco", "nigeria", "poland", "russia", "spain", "uk", "us"]
         button1.layer.borderWidth = 1
         button2.layer.borderWidth = 1
@@ -36,6 +43,13 @@ class ViewController: UIViewController {
         askQuestion()
         
     }
+    
+    @objc func showScore(){
+        
+        let scoreAction = UIAlertController(title: "SCORE", message: "Your score is \(score)", preferredStyle: .alert)
+        scoreAction.addAction(UIAlertAction(title: "Done", style: .default, handler: nil))
+        present(scoreAction, animated: true)
+    }
 
     func askQuestion(action: UIAlertAction! = nil){
         questions+=1
@@ -46,7 +60,7 @@ class ViewController: UIViewController {
         button2.setImage(UIImage(named: countries[1]), for: .normal)
         button3.setImage(UIImage(named: countries[2]), for: .normal)
 
-        title = "Score: \(score)--Tap on:\(countries[correctAnswer].uppercased())'s flag"
+        title = "Tap on:\(countries[correctAnswer].uppercased())'s flag"
         
     }
     
