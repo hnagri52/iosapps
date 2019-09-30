@@ -13,6 +13,8 @@
 		3F3C29D723423A950043CE67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C29D523423A950043CE67 /* Main.storyboard */; };
 		3F3C29D923423A980043CE67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C29D823423A980043CE67 /* Assets.xcassets */; };
 		3F3C29DC23423A980043CE67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F3C29DA23423A980043CE67 /* LaunchScreen.storyboard */; };
+		3F3C2A2423429D020043CE67 /* SignupStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2A2323429D020043CE67 /* SignupStep2ViewController.swift */; };
+		3F3C2A2623429D250043CE67 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C2A2523429D250043CE67 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3F3C29D823423A980043CE67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F3C29DB23423A980043CE67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F3C29DD23423A980043CE67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F3C2A2323429D020043CE67 /* SignupStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupStep2ViewController.swift; sourceTree = "<group>"; };
+		3F3C2A2523429D250043CE67 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				3F3C29CF23423A950043CE67 /* AppDelegate.swift */,
 				3F3C29D123423A950043CE67 /* SceneDelegate.swift */,
 				3F3C29D323423A950043CE67 /* ViewController.swift */,
+				3F3C2A2323429D020043CE67 /* SignupStep2ViewController.swift */,
 				3F3C29D523423A950043CE67 /* Main.storyboard */,
 				3F3C29D823423A980043CE67 /* Assets.xcassets */,
 				3F3C29DA23423A980043CE67 /* LaunchScreen.storyboard */,
 				3F3C29DD23423A980043CE67 /* Info.plist */,
+				3F3C2A2523429D250043CE67 /* User.swift */,
 			);
 			path = BasicForm;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F3C29D423423A950043CE67 /* ViewController.swift in Sources */,
+				3F3C2A2423429D020043CE67 /* SignupStep2ViewController.swift in Sources */,
 				3F3C29D023423A950043CE67 /* AppDelegate.swift in Sources */,
+				3F3C2A2623429D250043CE67 /* User.swift in Sources */,
 				3F3C29D223423A950043CE67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +295,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FXMRWH873T;
 				INFOPLIST_FILE = BasicForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FXMRWH873T;
 				INFOPLIST_FILE = BasicForm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
