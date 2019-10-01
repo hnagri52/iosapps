@@ -21,6 +21,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.user = User()
+        navigationItem.title = "Work Order Inspections"
+//        navigationController?.navigationBar.barTintColor = UIColor(red: 0.67, green: 0/255, blue: 0, alpha: 1)
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+
+         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: nil, style: .done, target: nil, action: nil)
+    }
+    
+    @objc func homeButtonTapped(){
+        self.performSegue(withIdentifier: "ViewController", sender: self)
         
     }
 

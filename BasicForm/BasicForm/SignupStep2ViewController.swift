@@ -19,9 +19,17 @@ class SignupStep2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .rewind, target: self, action: #selector(homeButtonTapped))
+        
+       
 
-        self.emailField.text = "Hi \(user!.name!)! What's your email."
+        self.emailFieldLabel.text = "Hi \(user!.name!)! What's your email."
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func homeButtonTapped(){
+        self.navigationController?.popToRootViewController(animated: true)
+        
     }
     
 
